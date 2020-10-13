@@ -24,7 +24,7 @@ a {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("images/countonus-daytime.jpg");
     background-position: center;
     background-size: cover;
-    padding: 10%;
+    padding: 30px;
     border: 5px solid;
     border-image-source: linear-gradient(#2a9c95, #FFDE16);
     border-image-slice: 1;
@@ -33,11 +33,17 @@ a {
 .title h2 {
     font-size: 4.75rem;
     text-align: center;
+    color: white;
+    letter-spacing: 1.25rem;
 }
 
 .title h3 {
+    font-size: 2.0rem;
+    color: #FFDE16;
+}
+
+.title p {
     font-style: italic;
-    font-size: 2.5rem;
 }
 
 .inner-title {
@@ -59,12 +65,14 @@ a {
     text-shadow: 0.5px 0.5px 0.5px black;
 }
 
-.logo {
-    margin-left: auto;
-    margin-right: auto;
+.images {
     display: flex;
+}
+
+.logo {
+    margin: auto;
     width: 50%;
-    float: right;
+    flex-shrink: inherit;
 }
 
 .pledge {
@@ -75,6 +83,11 @@ a {
     flex: 1;
     align-content: center;
     text-align: center;
+    font-size: 1.8rem;
+    border: 2px solid;
+    border-color: black;
+    border-image-slice: 1;
+    color: rgb(51, 52, 46);
 }
 
 .pledge-paragraph {
@@ -82,6 +95,26 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pledge-paragraph h2 {
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1.00rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black; 
+}
+
+.pledge-form h2 {
+    font-size: 2.25rem;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 1.00rem;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px black; 
+    text-align: center;
+}
+
+.pledge-form p, .pledge-form ol, .pledge-form li {
+    font-size: 1.2rem;
 }
 
 .pledge-form {
@@ -146,6 +179,10 @@ fieldset {
 
 label {
     margin-bottom: 20px;
+}
+
+.button {
+    
 }
 
 .radio-command {
