@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>title</title>
+        <title>Space City Youth Alliance</title>
         <link rel="stylesheet" href="styles.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
     </head>
     
     <body>
         <div class='title'>
-            <h2>OUR TIME IS <span class='header'>NOW</span></h2>
+            <h2>Space City Youth Alliance</h2>
     
-            <h3>Not in 10 years, not next year, not tomorrow, <span class='header'>NOW</span>. Our Time is <span class='header'>NOW</span>.</h3>
+            <h3 class="shimmer">A New Frontier In Houston Organizing</h3>
     
             <br />
 
@@ -23,7 +23,7 @@
 
         <div class="pledge-and-form">
 
-            <div class='pledge'>
+            <section class="block-column pledge is-vertically-aligned-top">
                 
                 <div class="images">
                     <div class="logo">
@@ -36,71 +36,67 @@
 
                 </div>
 
-                <p>From the Inner Loop to the Suburbs, from the Gulf in the East to the Bayous in the West, we are building an unprecedented movement of empowered young people that will not only shape the course of this election, but will define the next decade of politics in the Greater Houston Area. If we are to fight for racial, environmental, and economic justice, H-town’s youth must not only project their voices, but work methodically to gain power and influence in our civic life. We must unite in an unparalleled, inclusive manner that forcefully communicates a vision for a future we know is possible.</p>
+                <div class="pledge-paragraph">
+                    <p>From the Inner Loop to the Suburbs, from the Gulf in the East to the Bayous of the West, we are building an unprecedented movement of empowered young people that will not only shape the course of this election, but will define the next decade of politics in the Greater Houston Area. If we are to fight for racial, environmental, and economic justice, as H-town’s youth we must not only project our voices, but work methodically to gain power and influence in civic life. We must unite in an unparalleled, inclusive manner that forcefully communicates a vision for a future we know is possible. </p>
                 
-                <p>All of that starts with this election. Maybe it’s your first one. Maybe you still can’t vote. Maybe you’re nervous. That’s OK. Take a leap of faith and sign this pledge. By signing this pledge your are committing to:</p>
+                    <p> All of that starts with this election. On the Trump administration’s watch, 75 billion-dollar weather and climate disasters have struck, over 1,000 black people have been killed by police, and over 200,000 people have died from COVID-19. We cannot let this continue.</p>
+                </div>
+            </section>
+    
+            <section class="block-column pledge-form is-vertically-aligned-center">
+
+                <p>Maybe it’s your first election. Maybe you still can’t vote. Maybe you’re nervous. That’s OK. Take a leap of faith and sign this pledge. By signing this pledge:</p>
     
                 <ol>
-                    <li>Vote (if you are eligible)</li>
-                    <li>Contact 3 other eligible voters you know</li>
-                    <li>If you can't do (2), send this pledge to 3 other passionate young people to get them involved in this movement.</li>
+                    <li>I pledge to vote (if I am eligible). Check out the <a href="https://www.instagram.com/p/CGNckiDHFaA/">Sunrise Voting Guide</a> if you’re unsure of who to support.</li>
+                    <li>I pledge to contact 3 other eligible voters I know by using <a href="https://traindemocrats.org/vote-tripling/">Vote Tripling</a>.</li>
+                    <li>If I can’t do (2), I will send this pledge to 3 other passionate young people to get them involved in this movement.</li>
                 </ol>
     
                 <p>By providing us with your contact information, you will be joining one of the most powerful, diverse networks of young leaders ever assembled across Houston. Securing this election and defending our democracy will be the critical first step. </p>
     
-            </div>
-    
-            <div class='pledge-form'>
+
                 <form action="..." method="post">
                     <fieldset required>
-                        <label>Name:
-                            <input type="text" name="text_input" maxlength="100" required>
-                        </label>
 
-                        <label>Age:
-                            <input type="number" name="numerical_input" min="0" max="100" required>
-                        </label>
+                            <div class="address-form">
+                                <input type="text" name="text_input" placeholder="Name" maxlength="100" required>
+                                <input type="number" name="numerical_input" placeholder="Age" min="0" max="100" required>
+                                <input type="tel" name="telephone_input" placeholder="Phone Number" minlength="10" maxlength="10" required>
+                            </div>
 
-                        <label>Phone Number:
-                            <input type="tel" name="telephone_input" minlength="10" maxlength="10" required>
-                        </label>
-
-                        <label>Email:
-                            <input type="email" name="email_input" required>
-                        </label>
-
-                        <label>Zip Code:
-                            <input type="number" name="zip_code_input" minlength="5" maxlength="5" required>
-                        </label>
+                            <div class="address-form">
+                                <input type="email" name="email_input" placeholder="Email" required>
+                                <input type="number" name="zip_code_input" placeholder="Zip Code" minlength="5" maxlength="5" required>
+                            </div>
 
                     </fieldset>
 
                     <fieldset>
-                        <label>School (If Applicable):
-                            <input type="text" name="school_input">
-                        </label>
-
-                        <label>Organization (If Applicable):
-                            <input type="text" name="school_input">
-                        </label>
+                        <div class="address-form">
+                            <input type="text" name="school_input" placeholder="School (If Applicable)">
+                            <input type="text" name="school_input" placeholder="Organization (If Applicable)">
+                        </div>
                     </fieldset>
         
                     <fieldset required>
-                        <label for="hear-about">How did you hear about us?
-                            <select name="referrer" id="hear-about">
-                                <option value="friend">Friend</option>
-                                <option value="Current Sunrise or HYCS member">Current Sunrise or HYCS member</option>
-                                <option value="Newspaper/Article">Newspaper/Article</option>
-                                <option value="Flyer">Flyer</option>
-                                <option value="Twitter">Twitter</option>
-                                <option value="Instagram">Instagram</option>
-                                <option value="Facebook">facebook</option>
-                            </select>
-                        </label>
+                        <div class="address-form">
+                            <label class="address-form-block" for="hear-about">How did you hear about us?
+                                <select name="referrer" id="hear-about">
+                                    <option value="friend">Friend</option>
+                                    <option value="Current Sunrise or HYCS member">Current Sunrise or HYCS member</option>
+                                    <option value="Newspaper/Article">Newspaper/Article</option>
+                                    <option value="Flyer">Flyer</option>
+                                    <option value="Twitter">Twitter</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Facebook">facebook</option>
+                                </select>
+                            </label>
 
-                        <label>Questions, Comments, Concerns?:
-                            <input type="text" name="text_input" required>
-                        </label>
+                            <label class="address-form-block">Questions, Comments, Concerns?:
+                                <input type="text" name="text_input" required>
+                            </label>
+                        </div>
 
                         <p>Would you be interested in being a liaison for your school or organization?</p>
                         <input type="radio" name="answer" value="Yes"><label class="radio-command">Yes</label>
@@ -108,12 +104,12 @@
                         <input type="radio" name="answer" value="No"><label class="radio-command">No</label>
                     </fieldset>
     
-                <input type="submit" value="Submit">
+                <input type="submit" value="I Hereby Pledge">
 
                 <br />
 
                 </form>
-            </div>
+            </section>
 
         </div>
     

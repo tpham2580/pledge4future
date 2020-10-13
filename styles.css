@@ -2,7 +2,7 @@ html {
     background-color: rgb(51, 52, 46);
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
-    font-size: 1vw;
+    font-size: 1.25rem;
     height: 100%;
 }
 
@@ -11,25 +11,33 @@ body {
     box-sizing: border-box;
 }
 
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+a {
+    color: #FFDE16
+}
+
 .title {
     text-align: center;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url("images/countonus-daytime.jpg");
     background-position: center;
     background-size: cover;
     padding: 10%;
-    border: 10px solid;
+    border: 5px solid;
     border-image-source: linear-gradient(#2a9c95, #FFDE16);
     border-image-slice: 1;
 }
 
 .title h2 {
-    font-size: 5vw;
+    font-size: 4.75rem;
     text-align: center;
 }
 
 .title h3 {
     font-style: italic;
-    font-size: 2vw;
+    font-size: 2.5rem;
 }
 
 .inner-title {
@@ -41,16 +49,12 @@ body {
 }
 
 .pledge-and-form {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    width: 100%;
+    max-width: 100%;
+    margin: 2.5%;
     padding-left: 5%;
-    padding-right: 5%;
-    display: grid;  
-    grid-gap: 5px;  
-    grid-template-rows: repeat(auto-fit, 50%);
+    padding-right: 5%; 
+    display: flex;
     color: whitesmoke;
     text-shadow: 0.5px 0.5px 0.5px black;
 }
@@ -64,28 +68,75 @@ body {
 }
 
 .pledge {
-    padding: 10px; 
-    word-break: break-word;
-    overflow-wrap: break-word;
+    padding: 5px; 
     background-color: #FFDE16;
     color: black;
     text-shadow: none;
-    display: inline-block;
-    width: 49%;
-    min-height: 900px;
+    flex: 1;
+    align-content: center;
+    text-align: center;
+}
+
+.pledge-paragraph {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pledge-form {
     padding: 10px;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    display: inline-block;
-    width: 49%;
-    min-height: 900px;
+    box-sizing: border-box;
+    flex: 0 1 300px;
 }
 
-label, input, select {
-    font-size: 0.8vw;
+.pledge, .pledge-form {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    flex-basis: 0;
+    flex-grow: 1;
+    
+}
+
+.is-vertically-aligned-top {
+    align-self: flex-start;
+}
+
+.is-vertically-aligned-center {
+    align-self: center;
+}
+
+.is-vertically-aligned-top, .is-vertically-aligned-center {
+    width: 100%;
+}
+
+.block-column:not(:first-child) {
+    margin-left: 32px;
+}
+
+.block-column {
+    width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.address-form {
+    line-height: 2rem;
+    text-align: left;
+    margin: 1rem;
+}
+
+label, input, select, fieldset p {
+    font-size: 0.90rem;
+    font-style: normal !important;
+    padding: 16px 8px !important;
+    border-radius: 0 !important;
+}
+
+.address-form-block {
     display: block;
 }
 
@@ -101,10 +152,6 @@ label {
     display: inline-block;
     position: relative;
     width: auto; 
-}
-
-fieldset p {
-    font-size: 0.8vw;
 }
 
 .header {
