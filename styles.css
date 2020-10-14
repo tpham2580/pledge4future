@@ -85,7 +85,7 @@ a {
     color: rgb(51, 52, 46);
     text-align: justify;
     align-items: center;
-    padding: 2.5%;
+    padding: 75px;
     width: 500px;
     min-width: 500px;
     height: 850px;
@@ -117,8 +117,8 @@ a {
 .after {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 @media (max-width: 800px) {
