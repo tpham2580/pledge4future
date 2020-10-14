@@ -125,11 +125,19 @@ a {
     .pledge {
       margin: auto;
     }
+    .after {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
   }
 
   @media (max-width: 1300px) {
     .pledge-form {
       text-align: center;
+    }
+    .after {
+        padding-left: 50px;
+        padding-right: 50px;
     }
   }
 
