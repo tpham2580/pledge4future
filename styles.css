@@ -123,12 +123,15 @@ a {
 
 @media (max-width: 800px) {
     .pledge {
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 30px;
+        margin-left: 30px;
     }
     .after {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    iframe {
+        width: 800px;
     }
   }
 
@@ -137,12 +140,15 @@ a {
       text-align: center;
     }
     .pledge {
-        margin-right: auto;
-        margin-left: auto;
+        margin-right: 30px;
+        margin-left: 30px;
     }
     .after {
         padding-left: 50px;
         padding-right: 50px;
+    }
+    iframe {
+        width: 800px;
     }
   }
 
