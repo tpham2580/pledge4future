@@ -83,7 +83,7 @@ a {
     flex: 1;
     align-content: center;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     border: 2px solid;
     border-color: black;
     border-image-slice: 1;
@@ -182,7 +182,7 @@ label {
 }
 
 .button {
-    
+    background-color: #FFDE16; 
 }
 
 .radio-command {
