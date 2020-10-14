@@ -123,7 +123,8 @@ a {
 
 @media (max-width: 800px) {
     .pledge {
-      margin: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
     .after {
         padding-left: 20px;
@@ -136,7 +137,8 @@ a {
       text-align: center;
     }
     .pledge {
-        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
     }
     .after {
         padding-left: 50px;
