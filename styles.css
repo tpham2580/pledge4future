@@ -49,20 +49,9 @@ a {
 .inner-title {
     width: 70%;
     height: 70%;
-    text-align: center;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
-}
-
-.pledge-and-form {
-    width: 100%;
-    max-width: 100%;
-    margin: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%; 
-    display: flex;
-    color: whitesmoke;
-    text-shadow: 0.5px 0.5px 0.5px black;
 }
 
 .images {
@@ -75,128 +64,77 @@ a {
     flex-shrink: inherit;
 }
 
+.pledge-and-form {
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px 0.5px black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
 .pledge {
-    padding: 5px; 
     background-color: #FFDE16;
-    color: black;
     text-shadow: none;
-    flex: 1;
-    align-content: center;
-    text-align: center;
     font-size: 1.2rem;
     border: 2px solid;
     border-color: black;
     border-image-slice: 1;
     color: rgb(51, 52, 46);
+    text-align: justify;
+    align-items: center;
+    padding: 2.5%;
+    width: 500px;
+    min-width: 500px;
+    height: 850px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.pledge-paragraph {
-    width: 80%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.pledge-paragraph h2 {
+.pledge h2 {
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 1.00rem;
-    font-weight: 900;
-    text-shadow: 1px 1px 1px black; 
-}
-
-.pledge-form h2 {
-    font-size: 2.25rem;
-    font-family: Impact, Charcoal, sans-serif;
-    letter-spacing: 1.00rem;
-    font-weight: 900;
-    text-shadow: 1px 1px 1px black; 
     text-align: center;
-}
-
-.pledge-form p, .pledge-form ol, .pledge-form li {
-    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px whitesmoke;
 }
 
 .pledge-form {
-    padding: 10px;
-    box-sizing: border-box;
-    flex: 0 1 300px;
-}
-
-.pledge, .pledge-form {
-    word-break: break-word;
-    overflow-wrap: break-word;
-    flex-basis: 0;
-    flex-grow: 1;
-    
-}
-
-.is-vertically-aligned-top {
-    align-self: flex-start;
-}
-
-.is-vertically-aligned-center {
-    align-self: center;
-}
-
-.is-vertically-aligned-top, .is-vertically-aligned-center {
-    width: 100%;
-}
-
-.block-column:not(:first-child) {
-    margin-left: 32px;
-}
-
-.block-column {
-    width: 100%;
-    flex-basis: 0;
-    flex-grow: 1;
-    min-width: 0;
-    word-break: break-word;
-    overflow-wrap: break-word;
-}
-
-.address-form {
-    line-height: 2rem;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
-    margin: 1rem;
 }
 
-label, input, select, fieldset p {
-    font-size: 0.90rem;
-    font-style: normal !important;
-    padding: 16px 8px !important;
-    border-radius: 0 !important;
+.column {
+    width: 48%;
+    flex: 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.address-form-block {
-    display: block;
+.after {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10%;
+    padding-right: 10%
 }
 
-fieldset {
-    overflow: hidden;
-}
+@media (max-width: 800px) {
+    .pledge {
+      margin: auto;
+    }
+  }
 
-label {
-    margin-bottom: 20px;
-}
-
-.button {
-    background-color: #FFDE16; 
-}
-
-.radio-command {
-    display: inline-block;
-    position: relative;
-    width: auto; 
-}
+  @media (max-width: 1300px) {
+    .pledge-form {
+      text-align: center;
+    }
+  }
 
 .header {
     color: rgb(17, 221, 221);   
-}
-
-fieldset {
-    border: none;
 }
 
 footer {
