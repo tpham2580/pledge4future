@@ -8,6 +8,8 @@
     </head>
     
     <body>
+        <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
         <div class='title'>
 
             <h2>SPACE  CITY  YOUTH  ALLIANCE</h2>
@@ -61,33 +63,35 @@
     
                 <p>By providing us with your contact information, you will be joining one of the most powerful, diverse networks of young leaders ever assembled across Houston. Securing this election and defending our democracy will be the critical first step. </p>
     
-
-                <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScQt_Umj9WHkuGoUdNc65Db5u3UMv4ccQtGedAbcEsZYPnq5A/formResponse" method="post">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScQt_Umj9WHkuGoUdNc65Db5u3UMv4ccQtGedAbcEsZYPnq5A/viewform?embedded=true" width="1000" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                
+                <!--
+                <form id="form" method="post">
                     <fieldset required>
                             <div class="address-form">
-                                <input type="text" name="entry.1686879253" placeholder="Name" maxlength="100" required>
-                                <input type="number" name="entry.370194233" placeholder="Age" min="0" max="100" required>
-                                <input type="tel" name="entry.225945966" placeholder="Phone Number" minlength="10" maxlength="10" required>
+                                <input type="text" name="name" id="name" placeholder="Name" maxlength="100" required>
+                                <input type="number" name="age" id="age" placeholder="Age" min="0" max="100" required>
+                                <input type="tel" name="telephone" id="telephone" placeholder="Phone Number" minlength="10" maxlength="10" required>
                             </div>
 
                             <div class="address-form">
-                                <input type="email" name="entry.961119566" placeholder="Email" required>
-                                <input type="number" name="entry.28785177" placeholder="Zip Code" minlength="5" maxlength="5" required>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                                <input type="number" name="zip-code" id="zipcode" placeholder="Zip Code" minlength="5" maxlength="5" required>
                             </div>
 
                     </fieldset>
 
                     <fieldset>
                         <div class="address-form">
-                            <input type="text" name="entry.1919732131" placeholder="School (If Applicable)">
-                            <input type="text" name="entry.1311197408" placeholder="Organization (If Applicable)">
+                            <input type="text" name="school" id="school" placeholder="School (If Applicable)">
+                            <input type="text" name="organization" id="organization" placeholder="Organization (If Applicable)">
                         </div>
                     </fieldset>
         
                     <fieldset required>
                         <div class="address-form">
                             <label class="address-form-block" for="hear-about">How did you hear about us?
-                                <select name="entry.1101413177" id="hear-about">
+                                <select name="resource" id="hear-about">
                                     <option value="friend">Friend</option>
                                     <option value="Current Sunrise or HYCS member">Current Sunrise or HYCS member</option>
                                     <option value="Newspaper/Article">Newspaper/Article</option>
@@ -99,27 +103,53 @@
                             </label>
 
                             <label class="address-form-block">Questions, Comments, Concerns?:
-                                <input type="text" name="entry.503255853" required>
+                                <input type="text" name="anything-else" id="anything-else" required>
                             </label>
                         </div>
 
                         <p>Would you be interested in being a liaison for your school or organization? Liaisons are points of contact for their area/school. SYCA leaders will work with liaisons to help organize their area/region.</p>
-                        <input type="radio" name=entry.260403702_sentinel value="Yes"><label class="radio-command">Yes</label>
+                        <input type="radio" name="yes" id="radio-yes" value="Yes"><label class="radio-command">Yes</label>
 
-                        <input type="radio" name="entry.260403702_sentinel" value="No"><label class="radio-command">No</label>
+                        <input type="radio" name="no" id="radio-no" value="No"><label class="radio-command">No</label>
                     </fieldset>
     
-                <input type="submit" value="Submit My Pledge" class="button">
+                <input class="button" type="submit" value="Send Pledge">
 
                 <br />
 
-                </form>
+                </form> -->
             </section>
 
         </div>
     
-    <script src="main.js"></script>
+    
     </body>
+
+    <script>
+        var form = document.getElementById('form')
+
+        form.addEventListener('submit', function(e) {
+            //auto submission of the form
+
+            e.preventDefault()
+
+            var name = document.getElementById('name')
+            var age = document.getElementById('age')
+            var telephone = document.getElementById('telephone')
+            var email = document.getElementById('email')
+            var zipcode = document.getElementById('zipcode')
+            var school = document.getElementById('school')
+            var organization = document.getElementById('organization')
+            var hearAbout = document.getElementById('hear-about')
+            var anythingElse = document.getElementById('anything-else')
+            var radioYes = document.getElementById('radio-yes')
+            var radioNo = document.getElementById('radio-no')
+
+            // fetch post request
+
+            fetch
+        })
+    </script>
 
     <footer>
         <p>In collaboration with Sunrise Movement Houston and Houston Youth Climate Strike</p>
