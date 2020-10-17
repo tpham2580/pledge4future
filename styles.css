@@ -11,6 +11,16 @@ body {
     box-sizing: border-box;
 }
 
+strong {
+    font-weight: 900;
+    color: #FFDE16;
+}
+
+.pledge-and-form strong {
+    font-weight: 900;
+    color: black
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
